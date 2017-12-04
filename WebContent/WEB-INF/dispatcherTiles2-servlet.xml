@@ -44,6 +44,7 @@
 					<value>/WEB-INF/tiles2def/tilesdef.xml</value>
 				</list>
 			</property>
+			<property name="preparerFactoryClass" value="org.springframework.web.servlet.view.tiles2.SpringBeanPreparerFactory" />
 		</bean>
 
 		<bean id="viewResolver"
@@ -51,4 +52,8 @@
 			<property name="viewClass"	value="org.springframework.web.servlet.view.tiles2.TilesView" />
 		</bean>
 
+<!-- 
+		<bean class="_06_regist.controller.RegistMemberController" />
+ -->	
+		<bean id="menuPreparer" class="_06_regist.tiles2.MenuPreparer" />
 </beans>
