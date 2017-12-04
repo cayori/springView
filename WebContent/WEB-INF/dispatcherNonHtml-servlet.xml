@@ -11,4 +11,7 @@
 		class="org.springframework.web.servlet.view.BeanNameViewResolver" />
 
 	<bean id="download" class="_09_download.view.DownloadView" />
+	
+	<bean id="pageRanksController" class="_10_download.pageRanks.controller.PageRanksController" />
+	<bean id="pageRanks" class="_10_download.pageRanks.view.PageRanksView" />
 </beans>
